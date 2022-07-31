@@ -42,12 +42,12 @@ class App extends Component {
     return (
       <div id="main">
         <ol>
-            <li key="location1">Goa</li>
-            <li key="location2">Amsterdam</li>
-            <li key="location3">New York</li>
-            <li key="location4">Darjeeling</li>
-            <li key="locationt5">Tokyo</li>
-            <li key="locationt6">Lonavala</li>
+            <li key="location1">Goa(India)</li>
+            <li key="location2">Amsterdam(Netherlands)</li>
+            <li key="location3">New York(USA)</li>
+            <li key="location4">Darjeeling(India)</li>
+            <li key="locationt5">Tokyo(Japan)</li>
+            <li key="locationt6">Lonavala(India)</li>
         </ol>
 
       </div>
