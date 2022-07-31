@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    const destinations = this.cityList = [{ name: 'Goa', country: 'India' },
+    this.cityList = [{ name: 'Goa', country: 'India' },
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
@@ -17,7 +17,6 @@ class App extends Component {
     { name: 'Museum Island', country: 'Germany' },
     { name: 'Munnar', country: 'India' },
     { name: 'Leh Ladakh', country: 'India' },
-    { name: 'Goa', country: 'India' },
     { name: 'Agra', country: 'India' },
     { name: 'Dalhousie', country: 'India' },
     { name: 'Coorg', country: 'India' },
@@ -35,16 +34,14 @@ class App extends Component {
     { name: 'Mount Abu', country: 'India' },
     { name: 'Tirupati', country: 'India' },
     ]
-
+    const arr= destinations.filter((item)=>{
+      return (item.name=='Goa' ||item.name== 'Darjeeling' || item.name== 'Lonavala' );
+    });
 
   }
 
  
   render() {
-    const arr= destinations.filter((item)=>{
-      return item.country=='India';
-    });
-
     const listitems= arr.map((item,idx)=>{
       <li key={`location${idx+1}`}>{item.name}</li>
     });
@@ -54,6 +51,8 @@ class App extends Component {
       <div id="main">
         <ol>
             {listitems}
+           
+            <li>Hello</li>
         </ol>
 
       </div>
