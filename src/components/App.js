@@ -35,22 +35,30 @@ class App extends Component {
     { name: 'Mount Abu', country: 'India' },
     { name: 'Tirupati', country: 'India' },
     ]
+
+
   }
 
+ 
   render() {
+    const arr= destinations.filter((item)=>{
+      return item.country=='India';
+    });
+
+    const listitems= arr.map((item,idx)=>{
+      <li key={`location${idx+1}`}>{item.name}</li>
+    });
 
     return (
+     
       <div id="main">
         <ol>
-            <li key="location1">Goa(India)</li>
-            <li key="location2">Amsterdam(Netherlands)</li>
-            <li key="location3">New York(USA)</li>
-            <li key="location4">Darjeeling(India)</li>
-            <li key="locationt5">Tokyo(Japan)</li>
-            <li key="locationt6">Lonavala(India)</li>
+            {listitems}
         </ol>
 
       </div>
+      
+      
     )
   }
 }
