@@ -34,25 +34,23 @@ class App extends Component {
     { name: 'Mount Abu', country: 'India' },
     { name: 'Tirupati', country: 'India' },
     ]
-    const arr= destinations.filter((item)=>{
-      return (item.name=='Goa' ||item.name== 'Darjeeling' || item.name== 'Lonavala' );
-    });
+    // const arr= destinations.filter((item)=>{
+    //   return (item.name=='Goa' ||item.name== 'Darjeeling' || item.name== 'Lonavala' );
+    // });
 
   }
 
  
   render() {
-    const listitems= arr.map((item,idx)=>{
-      <li key={`location${idx+1}`}>{item.name}</li>
-    });
+    // const listitems= arr.map((item,idx)=>{
+    //   <li key={`location${idx+1}`}>{item.name}</li>
+    // });
 
     return (
      
       <div id="main">
         <ol>
             {listitems}
-           
-            <li>Hello</li>
         </ol>
 
       </div>
