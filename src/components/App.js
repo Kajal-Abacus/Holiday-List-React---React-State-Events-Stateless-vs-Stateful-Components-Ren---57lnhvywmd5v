@@ -43,7 +43,7 @@ class App extends Component {
  
   render() {
     const listitems= arr.map((item,idx)=>{
-      <li key={`location${idx+1}`}>{item.name}</li>
+      <li key={`location${idx+1}`}>{item.name.toString()}</li>
     });
 
     return (
