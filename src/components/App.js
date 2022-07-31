@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.cityList = [{ name: 'Goa', country: 'India' },
+    const destinations = this.cityList = [{ name: 'Goa', country: 'India' },
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
@@ -38,9 +38,18 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div id="main">
-        {/* Do not remove the main div */}
+        <ol>
+            <li key="location1">Goa</li>
+            <li key="location2">Amsterdam</li>
+            <li key="location3">New York</li>
+            <li key="location4">Darjeeling</li>
+            <li key="locationt5">Tokyo</li>
+            <li key="locationt6">Lonavala</li>
+        </ol>
+
       </div>
     )
   }
